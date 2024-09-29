@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -84,14 +84,21 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MobilnaKostki\MobilnaKostki.csproj">
       <Project>{92EF1F74-7EBE-4193-BA75-DD9943C21497}</Project>
       <Name>MobilnaKostki</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Resources\drawable\liczba1.png" />
+    <Content Include="Resources\drawable\liczba2.png" />
+    <Content Include="Resources\drawable\liczba3.png" />
+    <Content Include="Resources\drawable\liczba4.png" />
+    <Content Include="Resources\drawable\liczba5.png" />
+    <Content Include="Resources\drawable\liczba6.png" />
+    <Content Include="Resources\drawable\pytajnik.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

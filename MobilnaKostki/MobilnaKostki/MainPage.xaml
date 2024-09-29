@@ -4,6 +4,7 @@
              x:Class="MobilnaKostki.MainPage">
 
     <StackLayout>
+        <Image Source="pytajnik.png"></Image>
     </StackLayout>
 
 </ContentPage>
