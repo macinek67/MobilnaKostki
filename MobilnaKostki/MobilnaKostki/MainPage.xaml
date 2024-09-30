@@ -1,10 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobilnaKostki.MainPage">
+             x:Class="MobilnaKostki.MainPage" Title="Home">
 
     <StackLayout>
-        <Image Source="pytajnik.png"></Image>
+        <StackLayout BackgroundColor="#A52A2A" Margin="0,10,0,10">
+            <Label FontSize="20" TextColor="White" Text="Gra w kosci. Autor 0000" Margin="0,10,0,10"/>
+        </StackLayout>
+        <Button x:Name="rzutKosciButton" Clicked="rzutKosciButton_Clicked" Text="RZUC KOSCMI" TextColor="White" BackgroundColor="#D2691E" Margin="0,10,0,10" HorizontalOptions="Center" CornerRadius="5"/>
+        <StackLayout Margin="0,10,0,10" Orientation="Horizontal">
+            <Image x:Name="kostka1" Source="pytajnik.png" HeightRequest="60" Margin="7"/>
+            <Image x:Name="kostka2" Source="pytajnik.png" HeightRequest="60" Margin="7"/>
+            <Image x:Name="kostka3" Source="pytajnik.png" HeightRequest="60" Margin="7"/>
+            <Image x:Name="kostka4" Source="pytajnik.png" HeightRequest="60" Margin="7"/>
+            <Image x:Name="kostka5" Source="pytajnik.png" HeightRequest="60" Margin="7"/>
+        </StackLayout>
+        <Label Text="Wynik tego losowania: 0" Margin="0,10,0,10" HorizontalOptions="Center"/>
+        <Label Text="Wynik gry: 0" Margin="0,10,0,10" HorizontalOptions="Center"/>
+        <Button x:Name="resetujWynikButton" Clicked="resetujWynikButton_Clicked" Text="RESETUJ WYNIK" TextColor="White" BackgroundColor="#D2691E" Margin="0,10,0,10" HorizontalOptions="Center" CornerRadius="5"/>
     </StackLayout>
 
 </ContentPage>

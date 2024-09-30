@@ -92,13 +92,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable\liczba1.png" />
-    <Content Include="Resources\drawable\liczba2.png" />
-    <Content Include="Resources\drawable\liczba3.png" />
-    <Content Include="Resources\drawable\liczba4.png" />
-    <Content Include="Resources\drawable\liczba5.png" />
-    <Content Include="Resources\drawable\liczba6.png" />
-    <Content Include="Resources\drawable\pytajnik.png" />
+    <AndroidResource Include="Resources\drawable\liczba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liczba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liczba3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liczba4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liczba5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\liczba6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pytajnik.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
